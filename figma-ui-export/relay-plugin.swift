@@ -1,4 +1,6 @@
-struct RelayPluginConnectedVariant: View {
+import SwiftUI
+
+struct ContentView: View {
   var body: some View {
     VStack(alignment: .leading, spacing: undefined) {
       HStack(spacing: 12) {
@@ -71,5 +73,11 @@ struct RelayPluginConnectedVariant: View {
     .shadow(
       color: Color(red: 0, green: 0, blue: 0, opacity: 0.25), radius: 4, y: 4
     );
+  }
+}
+
+struct ContentView_Previews: PreviewProvider {
+  static var previews: some View {
+    ContentView()
   }
 }
